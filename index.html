@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ryan Nader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <img src="assets/me.jpeg" class="photo" alt="Ryan Nader">
+        <div>
+            <h1>Ryan Nader</h1>
+            <p class="tagline">USC M.S. student interested in machine learning and computer systems.</p>
+            <div class="links">
+                <a href="mailto:ryanallynnader@gmail.com">ryanallynnader@gmail.com</a>
+                <a href="https://github.com/ryanallynnader">GitHub</a>
+            </div>
+            <p class="last-updated">Updated: <span id="last-updated"></span></p>
+        </div>
+    </div>
+
+    <h2>Timeline</h2>
+    <div class="timeline">
+
+        <div class="entry now">
+            <div class="time"><span class="current-marker" id="today"></span></div>
+            <div class="text"></div>
+        </div>
+
+        <div class="entry">
+            <div class="time">Fall 2026</div>
+            <div class="text">
+                <div class="part">
+                    <a href="https://www.usc.edu/"><img src="assets/USC_logo.png" alt=""></a>
+                    Pursuing an M.S. in Computer Science at USC.
+                </div>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="time">Spring 2025</div>
+            <div class="text">
+                <div class="part">
+                    <a href="https://bair.berkeley.edu/"><img src="assets/BAIR_logo.png" alt=""></a>
+                    Implemented a hierarchical summarization system to improve LLM responses on long-form documents, using vLLM and Llama 3.
+                </div>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="time">Fall 2024</div>
+            <div class="text">
+                <div class="part">
+                    <a href="https://www.berkeley.edu/"><img src="assets/berkeley_logo.png" alt=""></a>
+                    Graduated from UC Berkeley with a B.A. in Computer Science and Economics.
+                </div>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="time">Spring 2024</div>
+            <div class="text">
+                <div class="part">
+                    <img src="assets/189award.png" alt="">
+                    Received the CS189/289A Top Kaggle Performance Cumulative Score.
+                    <ul>
+                        <li>5/880 (0.991) — MNIST Classification (SVM)</li>
+                        <li>2/880 (0.972) — MNIST Classification (Gaussian Discriminant Analysis)</li>
+                        <li>11/880 (0.958) — Spam Classification (Gaussian Discriminant Analysis)</li>
+                        <li>1/880 (0.997) — Wine Classification (Logistic Regression)</li>
+                    </ul>
+                </div>
+                <div class="part">
+                    <a href="https://coral-partners-321934.framer.app/"><img src="assets/ml_at_berkeley.png" alt=""></a>
+                    Participated in an advanced EECS group study on deep learning for images, building ResNet, YOLO, Vision Transformer, and diffusion models in PyTorch.
+                </div>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="time">Fall 2023</div>
+            <div class="text">
+                <div class="part">
+                    <a href="https://roar.berkeley.edu/"><img src="assets/roar.png" alt=""></a>
+                    Participated in an advanced EECS group study where we trained a self-driving race car with reinforcement learning in the CARLA simulator.
+                </div>
+                <div class="part">
+                    <img src="assets/pintos.png" alt="">
+                    Implemented parts of PintOS kernel, namely:
+                    <ul>
+                        <li>Added support for running programs and interacting with the operating system through system calls.</li>
+                        <li>Implemented core thread scheduling.</li>
+                        <li>Implemented file system caching, large file support, and subdirectories.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="time">Fall 2022</div>
+            <div class="text">
+                <div class="part">
+                    <img src="assets/apple_award.png" alt="">
+                    Achieved the lowest CPI in the EECS151/251A Apple Design Contest.<br>
+                    I designed a custom RISC-V 32I compliant datapath implemented on both ASIC and FPGA, achieving a CPI of 1 with a 5-stage CPU architecture and an optimized branch predictor.
+                </div>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="time">Spring 2022</div>
+            <div class="text">
+                <div class="part">
+                    <img src="assets/TI_award.svg" alt="">
+                    Received the EECS 16B Class Design Contest Award.<br>
+                    Fully funded by the Berkeley Wireless Research Center (BWRC).<br>
+                    I extended the voice-controlled car project by redesigning the analog circuit on a custom two-layer PCB in Altium.<br>
+                    incorporating digitally tunable resistors (digitial potentiometers) via a microcontroller for attenuation control, and integrating ADC modules to enable analysis of node voltages.
+                </div>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="time">Fall 2021</div>
+            <div class="text">
+                <div class="part">
+                    <a href="https://www.ocf.berkeley.edu/"><img src="assets/OCF.png" alt=""></a>
+                    Participated in an advanced EECS group study where we learned to work with Linux-based server environments.
+                </div>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="time">Fall 2020</div>
+            <div class="text">
+                <div class="part">
+                    <img src="assets/NUMC.png" alt="">
+                    Received the CS 61C Top NumC Performance Award.
+                    <ul>
+                        <li>Built a high-performance matrix computation library implemented in C with a Python interface.</li>
+                        <li>Optimized using SIMD vectorization and parallel processing.</li>
+                        <li>Ranked 14th out of 576 students.
+                            <ul>
+                                <li>183.77× speedup on the multiply benchmark</li>
+                                <li>1743.14× speedup on the power benchmark</li>
+                                <li>3.19× speedup on the simple benchmark</li>
+                                <li>192.05× speedup on the comprehensive benchmark</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    // todays date at the top of the timeline and the "updated" line
+    var fmt = { month: 'long', day: 'numeric', year: 'numeric' };
+    document.getElementById('today').textContent = new Date().toLocaleDateString('en-US', fmt);
+    document.getElementById('last-updated').textContent = new Date(document.lastModified).toLocaleString('en-US',
+        { month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' });
+</script>
+</body>
+</html>
